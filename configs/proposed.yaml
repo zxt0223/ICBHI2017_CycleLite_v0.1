@@ -1,0 +1,46 @@
+frontend:
+  sample_rate: 16000
+  highpass_hz: 50
+  n_ffts: [512, 2048]
+  hop_length: 160
+  n_mels: 64
+  fmin: 50
+  fmax: 4000
+  pcen:
+    time_constant: 0.4
+    alpha: 0.8
+    delta: 2.0
+    r: 0.5
+    eps: 0.000001
+model:
+  feature_mode: dual_pcen
+  width: 1.0
+  axis_blocks: true
+  pooling: events
+  window_seconds: 4.0
+  window_stride_ratio: 0.5
+  dropout: 0.2
+train:
+  epochs: 150
+  batch_size: 16
+  workers: 4
+  learning_rate: 0.001
+  min_learning_rate: 0.00001
+  warmup_epochs: 5
+  weight_decay: 0.01
+  ema_decay: 0.995
+  amp: true
+  clip_grad_norm: 5.0
+  deterministic: true
+loss:
+  class_weight: sqrt
+  label_smoothing: 0.03
+  event_weight: 0.3
+  consistency_weight: 0.1
+  kd_weight: 0.0
+  kd_temperature: 3.0
+augment:
+  probability: 0.5
+  frequency_mask: 6
+  time_mask: 10
+  feature_noise_std: 0.01

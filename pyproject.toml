@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "icbhi-cyclelite"
+version = "0.1.0"
+description = "Patient-disjoint ICBHI four-class lightweight research pipeline"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.5,<3", "numpy>=1.24,<3", "scipy>=1.11,<2", "PyYAML>=6,<7"]
+
+[tool.setuptools.packages.find]
+include = ["icbhi_lite*"]

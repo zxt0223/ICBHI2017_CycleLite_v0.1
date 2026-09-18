@@ -1,0 +1,5 @@
+# Install the CUDA-appropriate PyTorch wheel first; see README_zh.md.
+torch>=2.5,<3
+numpy>=1.24,<3
+scipy>=1.11,<2
+PyYAML>=6,<7
