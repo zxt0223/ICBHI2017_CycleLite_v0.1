@@ -1,0 +1,35 @@
+{
+  "parameters": 312432,
+  "parameters_million": 0.312432,
+  "fp32_parameter_MiB": 1.19183349609375,
+  "state_dict_MiB": 1.2917203903198242,
+  "conv_linear_MACs": 104698496,
+  "conv_linear_MMACs": 104.698496,
+  "model_latency_ms_median": 12.411327499876279,
+  "model_latency_ms_p95": 14.84934675008844,
+  "frontend_latency_ms_median": 8.931232500117403,
+  "input_shape": [
+    1,
+    1,
+    4,
+    64,
+    401
+  ],
+  "batch_size": 1,
+  "windows": 1,
+  "window_seconds": 4.0,
+  "device": "cpu",
+  "cpu_threads": 1,
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "torch": "2.8.0+cpu",
+  "repeats": 50,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "mac_scope": "Conv1d/Conv2d/Linear only; excludes STFT/PCEN, activations, norm, pooling and attention matmul",
+  "latency_scope": "model on one fixed feature window; excludes disk I/O, resampling and window assembly; frontend reported separately",
+  "data": "synthetic random inputs; not an accuracy measurement",
+  "cycle_cost_note": "Backbone cost grows with the number of overlapping windows in the cycle"
+}

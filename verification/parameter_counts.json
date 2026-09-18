@@ -1,0 +1,13 @@
+{
+  "ablation_axis": 312432,
+  "ablation_frontend": 222472,
+  "ablation_pooling": 312432,
+  "baseline": 221824,
+  "distill": 312432,
+  "no_consistency": 312432,
+  "no_pcen": 312000,
+  "proposed": 312432,
+  "score_weight": 312432,
+  "teacher": 1048532,
+  "tiny": 106100
+}

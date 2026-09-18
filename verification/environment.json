@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "torch": "2.8.0+cpu",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "PyYAML": "6.0.3",
+  "cuda_available": false,
+  "unit_tests": 15,
+  "unit_tests_passed": true,
+  "real_icbhi_training_performed": false
+}

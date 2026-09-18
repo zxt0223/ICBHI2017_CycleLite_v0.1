@@ -1,0 +1,20 @@
+test_all_frames_covered_without_stretching (test_core.FrontendTests.test_all_frames_covered_without_stretching) ... ok
+test_exact_four_second_cycle_is_one_window (test_core.FrontendTests.test_exact_four_second_cycle_is_one_window) ... ok
+test_silence_and_tiny_cycles_finite (test_core.FrontendTests.test_silence_and_tiny_cycles_finite) ... ok
+test_knowledge_distillation_backpropagates (test_core.NetworkTests.test_knowledge_distillation_backpropagates) ... ok
+test_padded_values_and_absent_windows_cannot_change_predictions (test_core.NetworkTests.test_padded_values_and_absent_windows_cannot_change_predictions) ... ok
+test_real_network_has_finite_gradients (test_core.NetworkTests.test_real_network_has_finite_gradients) ... ok
+test_scripted_network_matches_python (test_core.NetworkTests.test_scripted_network_matches_python) ... ok
+test_window_permutation_preserves_cycle_prediction (test_core.NetworkTests.test_window_permutation_preserves_cycle_prediction) ... ok
+test_abnormal_confusion_is_not_a_true_positive (test_core.ProtocolTests.test_abnormal_confusion_is_not_a_true_positive) ... ok
+test_metric_uses_pooled_abnormal_not_macro_recall (test_core.ProtocolTests.test_metric_uses_pooled_abnormal_not_macro_recall) ... ok
+test_patient_bootstrap_reproducible (test_core.ProtocolTests.test_patient_bootstrap_reproducible) ... ok
+test_split_duplicates_and_leakage_rejected (test_core.ProtocolTests.test_split_duplicates_and_leakage_rejected) ... ok
+test_statistics_use_only_selected_training_cycles (test_core.ProtocolTests.test_statistics_use_only_selected_training_cycles) ... ok
+test_undefined_subgroup_score_is_not_fabricated (test_core.ProtocolTests.test_undefined_subgroup_score_is_not_fabricated) ... ok
+test_validation_patients_do_not_depend_on_test_labels (test_core.ProtocolTests.test_validation_patients_do_not_depend_on_test_labels) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.728s
+
+OK

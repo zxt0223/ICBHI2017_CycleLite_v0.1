@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "data": "generated synthetic audio ONLY, not ICBHI2017",
+  "torch": "2.8.0+cpu",
+  "cuda_available": false,
+  "checks": [
+    {
+      "check": "resampling_stereo_annotation_cache_and_patient_split",
+      "passed": true
+    },
+    {
+      "check": "uninterrupted_training_and_validation",
+      "passed": true
+    },
+    {
+      "check": "pause_training",
+      "passed": true
+    },
+    {
+      "check": "resume_training",
+      "passed": true
+    },
+    {
+      "check": "completed_run_resume_is_idempotent",
+      "passed": true
+    },
+    {
+      "check": "resume_matches_uninterrupted_weights_bitwise_on_cpu",
+      "passed": true
+    },
+    {
+      "check": "held_out_synthetic_evaluation_and_cluster_bootstrap",
+      "passed": true
+    },
+    {
+      "check": "multi_seed_summary_and_paired_patient_comparison",
+      "passed": true
+    },
+    {
+      "check": "variable_window_script_export",
+      "passed": true
+    },
+    {
+      "check": "wav_annotation_cycle_inference",
+      "passed": true
+    },
+    {
+      "check": "raw_wav_inference_matches_cached_cycle_predictions",
+      "passed": true
+    },
+    {
+      "check": "knowledge_distillation_training",
+      "passed": true
+    },
+    {
+      "check": "fixed_epoch_full_train_refit",
+      "passed": true
+    },
+    {
+      "check": "refit_validation_leakage_is_rejected",
+      "passed": true
+    },
+    {
+      "check": "teacher_patient_leakage_is_rejected",
+      "passed": true
+    }
+  ],
+  "real_icbhi_official_score": null
+}
